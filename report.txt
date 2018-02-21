@@ -1,0 +1,26 @@
+Project 4 Report
+Michelle Su
+CS 32
+Nachenberg
+
+
+MyMap::associate()
+If MyMap holds N nodes, and the Nodes are ordered, then the function will take O(logN) time on average. It takes O(logN) time to find a spot in MyMap to insert an association and one step to insert it.
+
+MyMap::find()
+If MyMap holds N nodes and MyMap is ordered, then the function will take O(logN) time to find the key, because it traverses through half the nodes (1/2 N) in the worst case scenario to find the node with the desired key.
+
+AttractionMapper::init()
+If MapLoader holds S Street Segments, and each Street Segment has A attractions on average, then the runtime of the function is O(SAlogA).
+
+AttractionMapper::getGeoCoord()
+If attractionMap, a map of strings to GeoCoords, holds N mappings, then the runtime of this function is O(logN). It takes O(logN) time to find something in an ordered map.
+
+SegmentMapper::init()
+If a MapLoader object has S StreetSegments  on average, with an average of A attractions on each of the segments, then the runtime would be ((S+A)log(S+A)).
+
+SegmentMapper::getSegments()
+If a MapLoader object has S StreetSegments  on average, with an average of A attractions on each of the segments, then the runtime would be (log(S+A)).
+
+Navigator::navigate()
+I didn’t finish the implementation of this function unfortunately.
